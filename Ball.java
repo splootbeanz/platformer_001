@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Ball {
     int x;
     int y;
@@ -11,5 +13,10 @@ public class Ball {
         this.deltaX = 0;
         this.deltaY = 0;
     }
+    public void draw(Graphics g) {
+        g.setColor(Color.BLACK);
+        g.fillOval(x, y, radius, radius);
+    }
     public void move() {}
+    public void die() {}
 }
